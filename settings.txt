@@ -1,46 +1,132 @@
-You will need to fill out this file for hand in. 
-
-The bellow is just an example, feel free to disregard this documents contents.
-
-
-Your final settings.txt will look something like this when you are finished:
 
 /////////////////////////////////
 
-Wallpaper 1:
+Wallpaper final:
 
 //your parameter variables go here!
-let rect_width  = 20;
-let rect_height = 20;
-let paramter1 = 10;
-let paramter2 = true;
-let paramter3 = 50; 
-let paramter4 = 0; 
-let paramter5 = 60;
+presetpenrose = "fixed" // Penrose randomization preset. Available presets are "fixed" and "random". Defaults to fixed
+
+presetcolor1 = "random"; // Color preset. Available presets are "white, grey, red, green, blue, purple, orange, yellow, random and fixed"
+presetcolor2 = "random"; // if preset is not set to one of the above, colors will default to white
+
+presetopacitymain = "random" // Main penrose opacity preset. Available presets are "fixed" and "random". Defaults to fixed
+presetopacity2 = "random" // Secondary penrose opacity preset. Available presets are "fixed" and "random". Defaults to fixed
+presetopacity3 = "random" // Tertiary penrose opacity preset. Available presets are "fixed" and "random". Defaults to fixed
+strokeopacity = "random" // Penrose stroke opacity preset. Available presets are "fixed" and "random". Defaults to fixed
+
+let opacity = 255; // parameters for opacity of main penrose geometry (0 - 255)
+let opacity2 = 255; // parameters for opacity of 2nd set of penrose geometry (0 - 255)
+let opacity3 = 255; // parameters for opacity of 3rd set of penrose geometry (0 - 255)   // Caution: for manual customization of position, colors and opacity,
+let opacityS = 255; // parameters for opacity of stroke for penrose geometry (0 - 255)      change preset to "fixed" first
+
+let gradient1 = 255; //parameters for gradient background
+let gradient2 = 255;
+let gradient3 = 255;
+let gradient21 = 255;
+let gradient22 = 255;
+let gradient23 = 255;
+
+let scaleFactor = 0.442; //parameters for main penrose geometry
+let Xdeduction = 75;
+let Ydeduction = 50;
+
+let scaleFactor2 = 0.093; //parameters for 2nd penrose geometry
+let Xdeduction2 = 139;
+let Ydeduction2 = 145;
+
+let scaleFactor3 = 0.072; //parameters for 3rd penrose geometry
+let Xdeduction3 = -73;
+let Ydeduction3 = -52.7;
+
+let scaleFactor4 = 0.072; //parameters for 4th penrose geometry
+let Xdeduction4 = -101;
+let Ydeduction4 = -101;
+
+let scaleFactor5 = 0.072; //parameters for 5th penrose geometry
+let Xdeduction5 = -45;
+let Ydeduction5 = -101;
+
+let scaleFactor6 = 0.194; //parameters for 6th penrose geometry
+let Xdeduction6 = 47;
+let Ydeduction6 = 105.5;
+
+let scaleFactor6alt = 0.205; //parameters for alternative version of 6th penrose geometry
+let Xdeduction6alt = 113;
+let Ydeduction6alt = 40.5;
+
+let scaleFactor7 = 0.071; //parameters for 7th penrose geometry
+let Xdeduction7 = 59.5;
+let Ydeduction7 = -10;
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
-  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.resolution(A3);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
-  pWallpaper.grid_settings.cell_width  = 100;
-  pWallpaper.grid_settings.cell_height = 100;
-  pWallpaper.grid_settings.row_offset  = 50;
+  pWallpaper.grid_settings.cell_width = 265;
+  pWallpaper.grid_settings.cell_height = 230;
+  pWallpaper.grid_settings.row_offset = 133;
 }
 
 /////////////////////////////////
 
-Wallpaper 2:
+Wallpaper 2nd preset:
 
 //your parameter variables go here!
-let rect_width  = 10;
-let rect_height = 10;
-let paramter1 = 20;
-let paramter2 = false;
-let paramter3 = 50; 
-let paramter4 = 80; 
-let paramter5 = 30;
+presetpenrose = "random" // Penrose randomization preset. Available presets are "fixed" and "random". Defaults to fixed
+
+presetcolor1 = "random"; // Color preset. Available presets are "white, grey, red, green, blue, purple, orange, yellow, random and fixed"
+presetcolor2 = "random"; // if preset is not set to one of the above, colors will default to white
+
+presetopacitymain = "random" // Main penrose opacity preset. Available presets are "fixed" and "random". Defaults to fixed
+presetopacity2 = "random" // Secondary penrose opacity preset. Available presets are "fixed" and "random". Defaults to fixed
+presetopacity3 = "random" // Tertiary penrose opacity preset. Available presets are "fixed" and "random". Defaults to fixed
+strokeopacity = "random" // Penrose stroke opacity preset. Available presets are "fixed" and "random". Defaults to fixed
+
+let opacity = 255; // parameters for opacity of main penrose geometry (0 - 255)
+let opacity2 = 255; // parameters for opacity of 2nd set of penrose geometry (0 - 255)
+let opacity3 = 255; // parameters for opacity of 3rd set of penrose geometry (0 - 255)   // Caution: for manual customization of position, colors and opacity,
+let opacityS = 255; // parameters for opacity of stroke for penrose geometry (0 - 255)      change preset to "fixed" first
+
+let gradient1 = 255; //parameters for gradient background
+let gradient2 = 255;
+let gradient3 = 255;
+let gradient21 = 255;
+let gradient22 = 255;
+let gradient23 = 255;
+
+let scaleFactor = 0.442; //parameters for main penrose geometry
+let Xdeduction = 75;
+let Ydeduction = 50;
+
+let scaleFactor2 = 0.093; //parameters for 2nd penrose geometry
+let Xdeduction2 = 139;
+let Ydeduction2 = 145;
+
+let scaleFactor3 = 0.072; //parameters for 3rd penrose geometry
+let Xdeduction3 = -73;
+let Ydeduction3 = -52.7;
+
+let scaleFactor4 = 0.072; //parameters for 4th penrose geometry
+let Xdeduction4 = -101;
+let Ydeduction4 = -101;
+
+let scaleFactor5 = 0.072; //parameters for 5th penrose geometry
+let Xdeduction5 = -45;
+let Ydeduction5 = -101;
+
+let scaleFactor6 = 0.194; //parameters for 6th penrose geometry
+let Xdeduction6 = 47;
+let Ydeduction6 = 105.5;
+
+let scaleFactor6alt = 0.205; //parameters for alternative version of 6th penrose geometry
+let Xdeduction6alt = 113;
+let Ydeduction6alt = 40.5;
+
+let scaleFactor7 = 0.071; //parameters for 7th penrose geometry
+let Xdeduction7 = 59.5;
+let Ydeduction7 = -10;
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
@@ -48,7 +134,77 @@ function setup_wallpaper(pWallpaper) {
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
-  pWallpaper.grid_settings.cell_width  = 100;
-  pWallpaper.grid_settings.cell_height = 100;
-  pWallpaper.grid_settings.row_offset  = 0;
+  pWallpaper.grid_settings.cell_width = 265;
+  pWallpaper.grid_settings.cell_height = 230;
+  pWallpaper.grid_settings.row_offset = 133;
+}
+
+  /////////////////////////////////
+
+Wallpaper 3nd preset:
+
+//your parameter variables go here!
+presetpenrose = "random" // Penrose randomization preset. Available presets are "fixed" and "random". Defaults to fixed
+
+presetcolor1 = "random"; // Color preset. Available presets are "white, grey, red, green, blue, purple, orange, yellow, random and fixed"
+presetcolor2 = "random"; // if preset is not set to one of the above, colors will default to white
+
+presetopacitymain = "random" // Main penrose opacity preset. Available presets are "fixed" and "random". Defaults to fixed
+presetopacity2 = "random" // Secondary penrose opacity preset. Available presets are "fixed" and "random". Defaults to fixed
+presetopacity3 = "random" // Tertiary penrose opacity preset. Available presets are "fixed" and "random". Defaults to fixed
+strokeopacity = "random" // Penrose stroke opacity preset. Available presets are "fixed" and "random". Defaults to fixed
+
+let opacity = 255; // parameters for opacity of main penrose geometry (0 - 255)
+let opacity2 = 255; // parameters for opacity of 2nd set of penrose geometry (0 - 255)
+let opacity3 = 255; // parameters for opacity of 3rd set of penrose geometry (0 - 255)   // Caution: for manual customization of position, colors and opacity,
+let opacityS = 255; // parameters for opacity of stroke for penrose geometry (0 - 255)      change preset to "fixed" first
+
+let gradient1 = 255; //parameters for gradient background
+let gradient2 = 255;
+let gradient3 = 255;
+let gradient21 = 255;
+let gradient22 = 255;
+let gradient23 = 255;
+
+let scaleFactor = 0.442; //parameters for main penrose geometry
+let Xdeduction = 75;
+let Ydeduction = 50;
+
+let scaleFactor2 = 0.093; //parameters for 2nd penrose geometry
+let Xdeduction2 = 139;
+let Ydeduction2 = 145;
+
+let scaleFactor3 = 0.072; //parameters for 3rd penrose geometry
+let Xdeduction3 = -73;
+let Ydeduction3 = -52.7;
+
+let scaleFactor4 = 0.072; //parameters for 4th penrose geometry
+let Xdeduction4 = -101;
+let Ydeduction4 = -101;
+
+let scaleFactor5 = 0.072; //parameters for 5th penrose geometry
+let Xdeduction5 = -45;
+let Ydeduction5 = -101;
+
+let scaleFactor6 = 0.194; //parameters for 6th penrose geometry
+let Xdeduction6 = 47;
+let Ydeduction6 = 105.5;
+
+let scaleFactor6alt = 0.205; //parameters for alternative version of 6th penrose geometry
+let Xdeduction6alt = 113;
+let Ydeduction6alt = 40.5;
+
+let scaleFactor7 = 0.071; //parameters for 7th penrose geometry
+let Xdeduction7 = 59.5;
+let Ydeduction7 = -10;
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GLIDE_WALLPAPER);
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width = 265;
+  pWallpaper.grid_settings.cell_height = 230;
+  pWallpaper.grid_settings.row_offset = 133;
 }
